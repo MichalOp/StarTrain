@@ -361,7 +361,7 @@ def run_lan_game(model_path, reference_replay, host, config_port):
         config_port=int(config_port),
         race=Race.protoss,
         name="StarTrain",
-        agent_interface_format=interface,
+        agent_interface_format=interface_format,
         visualize=False,
         step_mul=1,
         realtime=True,
