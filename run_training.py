@@ -24,7 +24,7 @@ DATA_DIR = "/home/michal/Data/StarTrainData/"
 
 PROFILE = False
 WRITE = True
-LOAD = True
+LOAD = False
 
 
 def selective_load(source_dict, target):
