@@ -410,6 +410,6 @@ if __name__ == "__main__":
         if args.address:
             host = args.address
         if args.port:
-            config_port = args.config_port
+            config_port = args.port
         run_lan_game(args.model_path, args.reference_replay, host, config_port)
 
