@@ -81,7 +81,7 @@ The speed of this step is mostly dependent on your GPU. On 1080 Ti you should ge
 
 The process will periodically run a test vs 20 Easy AIs and 20 Medium AIs and store the best network from those tests as `model/best.tm`. It will also store the current model as `model/ModelData.tm` after each iteration.
 
-### Results
+## Results
 
 All games were played on the 'Acropolis' map. Experiments here used an RTX Titan GPU.
 
@@ -109,7 +109,7 @@ Supervised learning + RL for 4 days (against Easy, Medium and Hard AIs):
 | Terran                | 99        | 96   | 87     | 17   |
 | Zerg                  | 100       | 97   | 78     | 36   |
 
-### Videos
+## Videos
 
 An older game against the Very Easy AI (Zerg):
 
