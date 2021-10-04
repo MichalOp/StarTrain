@@ -83,7 +83,7 @@ The process will periodically run a test vs 20 Easy AIs and 20 Medium AIs and st
 
 ## Results
 
-All games were played on the 'Acropolis' map. Experiments here used an RTX Titan GPU.
+Each field in the tables denotes the number of wins out of 100 games. All games were played on the 'Acropolis' map. Experiments listed here used RTX Titan GPU for training.
 
 Supervised learning (after around 3 days of training with batch 32 + 1 day of training with effective batch 512, and selecting the best network):
 
