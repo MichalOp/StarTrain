@@ -112,10 +112,13 @@ Supervised learning + RL for 4 days (against Easy, Medium and Hard AIs):
 ### Videos
 
 An older game against the Very Easy AI (Zerg):
+
 [![veasygame](https://img.youtube.com/vi/rNg0wpw5JKQ/0.jpg)](https://www.youtube.com/watch?v=rNg0wpw5JKQ)
 
 An older game against the Easy AI (Terran):
+
 [![easygame](https://img.youtube.com/vi/14Ew3N4wIns/0.jpg)](https://www.youtube.com/watch?v=14Ew3N4wIns)
 
 A recent game against the Hard AI (Protoss):
+
 [![easygame](https://img.youtube.com/vi/uioAX0fP9rU/0.jpg)](https://www.youtube.com/watch?v=uioAX0fP9rU)
