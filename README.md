@@ -4,7 +4,7 @@
 
 A neural network bot for StarCraft II, playing the game through the PySC2 library. Heavily inspired by AlphaStar, but uses the feature interface instead of the raw interface. It uses a network combined from parts of AlphaStar with parts from Relational Deep Reinforcement Learning, and is trainable on a single reasonably powerful GPU.
 
-This project is a part of my bachelor's thesis, *Applying supervised and reinforcement learning methods to create neural-network-based agents for playing Starcraft II* at the Faculty of Mathematics and Computer Science, University of Wrocław.
+This project is a part of my bachelor's thesis, [*Applying supervised and reinforcement learning methods to create neural-network-based agents for playing Starcraft II*](https://arxiv.org/abs/2109.12691) at the Faculty of Mathematics and Computer Science, University of Wrocław.
 
 ## Installation
 
@@ -81,3 +81,41 @@ The speed of this step is mostly dependent on your GPU. On 1080 Ti you should ge
 
 The process will periodically run a test vs 20 Easy AIs and 20 Medium AIs and store the best network from those tests as `model/best.tm`. It will also store the current model as `model/ModelData.tm` after each iteration.
 
+### Results
+
+All games were played on the 'Acropolis' map. Experiments here used an RTX Titan GPU.
+
+Supervised learning (after around 3 days of training with batch 32 + 1 day of training with effective batch 512, and selecting the best network):
+
+| Bot Race \ Difficulty | Very Easy | Easy | Medium | Hard |
+|-----------------------|-----------|------|--------|------|
+| Protoss               | 88        | 63   | 18     | 0    |
+| Terran                | 91        | 61   | 17     | 0    |
+| Zerg                  | 95        | 66   | 25     | 5    |
+
+Supervised learning + RL for 2 days (against Easy and Medium AIs):
+
+| Bot Race \ Difficulty | Very Easy | Easy | Medium | Hard |
+|-----------------------|-----------|------|--------|------|
+| Protoss               | 100       | 98   | 54     | 1    |
+| Terran                | 98        | 98   | 72     | 6    |
+| Zerg                  | 100       | 98   | 66     | 5    |
+
+Supervised learning + RL for 4 days (against Easy, Medium and Hard AIs):
+
+| Bot Race \ Difficulty | Very Easy | Easy | Medium | Hard |
+|-----------------------|-----------|------|--------|------|
+| Protoss               | 100       | 98   | 60     | 2    |
+| Terran                | 99        | 96   | 87     | 17   |
+| Zerg                  | 100       | 97   | 78     | 36   |
+
+### Videos
+
+An older game against the Very Easy AI (Zerg):
+[![veasygame](https://img.youtube.com/vi/rNg0wpw5JKQ/0.jpg)](https://www.youtube.com/watch?v=rNg0wpw5JKQ)
+
+An older game against the Easy AI (Terran):
+[![easygame](https://img.youtube.com/vi/14Ew3N4wIns/0.jpg)](https://www.youtube.com/watch?v=14Ew3N4wIns)
+
+A recent game against the Hard AI (Protoss):
+[![easygame](https://img.youtube.com/vi/uioAX0fP9rU/0.jpg)](https://www.youtube.com/watch?v=uioAX0fP9rU)
