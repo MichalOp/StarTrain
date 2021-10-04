@@ -18,7 +18,7 @@ Installation steps on Ubuntu:
 3. Install Python 3.9.
 4. Install [PyTorch](https://pytorch.org/), and ensure CUDA acceleration works.
 5. Install [PySC2](https://github.com/deepmind/pysc2).
-6. From [sc2client-proto](https://github.com/Blizzard/s2client-proto) download and unzip Linux SC2 package for version 4.9.3 (theoretically you can use different version, but the networks were trained for this version and they might work or not on others.
+6. From [sc2client-proto](https://github.com/Blizzard/s2client-proto) download and unzip Linux SC2 package for version 4.9.3 (theoretically you can use different version, but the networks were trained for this version and they might work or not on others).
 7. Also from [sc2client-proto](https://github.com/Blizzard/s2client-proto), download map pack for 2019 Season 3. Place the unzipped pack in the Maps folder of your SC2 installation.
 8. Ensure you can run example commands from [PySC2](https://github.com/deepmind/pysc2). 
 9. Install the remaining packages from `requirements.txt` (installing `sc2reader zstd` might be enough).
@@ -83,7 +83,7 @@ The process will periodically run a test vs 20 Easy AIs and 20 Medium AIs and st
 
 ## Results
 
-Each field in the tables denotes the number of wins out of 100 games. All games were played on the 'Acropolis' map. Experiments listed here used RTX Titan GPU for training.
+Each field in the tables denotes the number of wins out of 100 games. All games were played on the 'Acropolis' map, and the network always plays as Protoss. Experiments listed here used RTX Titan GPU for training. 
 
 Supervised learning (after around 3 days of training with batch 32 + 1 day of training with effective batch 512, and selecting the best network):
 
