@@ -109,6 +109,9 @@ Supervised learning + RL for 4 days (against Easy, Medium and Hard AIs):
 | Terran                | 99        | 96   | 87     | 17   |
 | Zerg                  | 100       | 97   | 78     | 36   |
 
+## Agent architecture:
+![Architecture](SC2ModelDiagram.png)
+
 ## Videos
 
 An older game against the Very Easy AI (Zerg):
